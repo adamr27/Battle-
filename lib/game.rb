@@ -5,7 +5,7 @@ class Game
     @players = [player_1, player_2]
     @current_turn = player_1
   end
-  
+
   def self.create(player_1, player_2)
     @game = Game.new(player_1, player_2)
   end
@@ -48,7 +48,7 @@ class Game
     losing_players.first
   end
 
-  private
+  # private
   attr_reader :players
 
   def losing_players
